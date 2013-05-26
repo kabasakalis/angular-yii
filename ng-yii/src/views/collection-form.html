@@ -1,0 +1,103 @@
+<div ng-hide="true" ui-jq="fadeIn">
+    <div class="row">
+        <div class="span6">
+            <h1 ui-if="editing">Update Collection (ID: {{collection.id}})</h1>
+            <h1 ui-if="!editing">Create New Collection</h1>
+            <form name="collectionform"
+                  id="collectionform"
+                  class="row form-horizontal newcollection-create-form"
+                  novalidate
+                    >
+                <div class="control-group"
+                     ng-class="{error: collectionform.name.$dirty&&  ( collectionform.name.$error.required || collectionform.name.$error.maxlength) }">
+                    <label class="control-label" for="name">Name</label>
+
+                    <div class="controls">
+                        <input type="text" name="name" id="name" ng-maxlength="20" ng-model="collection.name" required
+                               value="{{collection.name}}" placeholder="Name">
+
+            <span ng-show=" collectionform.name.$error.maxlength"
+                  class="help-inline">Must be less than 20 characters.</span>
+                        <span ng-show="collectionform.name.$dirty&&collectionform.name.$error.required"
+                              class="help-inline">Required.</span>
+                    </div>
+
+                </div>
+                <div class="control-group"
+                     ng-class="{error: collectionform.description.$dirty&& ( collectionform.description.$error.maxlength || collectionform.description.$error.minlength ||  collectionform.description.$error.required) }">
+                    <label class="control-label" for="description">description</label>
+
+                    <div class="controls">
+                        <textarea name="description" ng-model="collection.description" id="description" rows="3"
+                                  ng-minlength="10"
+                                  ng-maxlength="100" required placeholder="Description"></textarea>
+                <span ng-show=" collectionform.description.$dirty&&collectionform.description.$error.maxlength"
+                      class="help-inline">Must be less than 100  characters.</span>
+                <span ng-show=" collectionform.description.$dirty&&collectionform.description.$error.minlength"
+                      class="help-inline">Must be at least  10  characters.</span>
+            <span ng-show="collectionform.description.$dirty&&collectionform.description.$error.required"
+                  class="help-inline">Required.</span>
+                    </div>
+                </div>
+
+
+                <div class="control-group"
+                     ng-class="{error: collectionform.collections.$dirty &&  collectionform.collections.$error.required  }">
+                    <label class="control-label" for="images">Images</label>
+
+                    <div class="controls">
+                        <input id="images" name="images"
+                               data-placeholder="Choose images..."
+                               ng-model="collection.images"
+                               ui-select2="filters.collectionOptions"
+                                >
+
+                <span ng-show="collectionform.collections.$dirty  && collectionform.collections.$error.required"
+                      class="help-inline">Required.</span>
+                    </div>
+
+                </div>
+                <input type="hidden" name="id" value={{collection.id}}>
+
+                <div class="control-group">
+                    <div class="controls"><!--{{ collectionform.$valid}}-->
+
+
+                        <button ui-if="editing" class="btn" ng-disabled="collectionform.$invalid"
+                                type="submit"
+                                ng-click="Collection.update(collection)"
+                                id="update"
+                                >
+                            <span>Update</span>
+                        </button>
+
+                        <button ui-if="!editing" class="btn" ng-disabled="collectionform.$invalid"
+                                type="submit"
+                                execute-click-once="Collection.create(collection)"
+                                id="create"
+                                >
+                            <span>Create</span>
+                        </button>
+                        <button ui-if="editing" class="btn btn-danger"
+                                execute-click-once="Collection.delete(collection.id)"
+                                id="delete"
+                                >
+                            <span>Delete</span>
+                        </button>
+                        <button class="btn"
+
+                                ng-click="cancel()"
+                                id="cancel"
+                                >
+                            <span>Cancel</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="span6">
+            <h3>JSON Collection Object (ID: {{collection.id}})</h3>
+            <pre>{{ collection | json }}</pre>
+        </div>
+    </div>
+</div>

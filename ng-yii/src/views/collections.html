@@ -1,0 +1,32 @@
+<div ng-hide="true" ui-jq="fadeIn">
+    <h1 class="page-header">Collections</h1>
+    <div class="span6">
+        <div class="push-10">
+            <a href="#/collection-create" class="btn btn-primary"><i class="icon-plus-sign"></i> Create New</a>
+        </div>
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th><a href="#/collection-create" popover-trigger="hover" popover-placement="right"
+                       popover="Create New"><i class="icon-plus-sign"></i></a></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="collection in collections">
+                <td><a href="#/collection-edit/{{collection.id}}" popover-trigger="hover" popover-placement="right"
+                       popover="{{collection.description}}">{{collection.name}}</a></td>
+                <td style="width:10px">
+                    <a href="#/collection-edit/{{collection.id}}" popover-trigger="hover" popover-placement="right"
+                       popover="Edit"><i class="icon-pencil"></i></a>
+                </td>
+                <td style="width:10px">
+                    <a href="#" ng-click="Collection.delete(collection.id)" popover-trigger="hover"
+                       popover-placement="right" popover="Remove"><i class="icon-remove"></i></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<div ng-hide="false" class="row">
+    <ul class="thumbnails">
+        <li class="span12">
+            <h1>{{image.name}} </h1>
+            <p>{{image.description}} </p>
+            <p>
+                <a class="btn" href="#/images">Back To Images</a>
+                <a href="#/image-edit/{{image.id}}" class="btn btn-primary">Edit</a>
+                <a class="btn btn-danger" execute-click-once="Image.delete(image.id)">Delete</a>
+            </p>
+
+            <div class="thumbnail">
+                <img ng-src="{{Image.getImageURL(image)}}" alt="">
+
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th><a href="#/collections" popover-trigger="hover" popover-placement="right"
+                               popover="Go To Collections">Collections This Image Belongs To:</a>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="collection in image.collections">
+                        <td><a href="#/collection-edit/{{collection.id}}" popover-trigger="hover"
+                               popover-placement="right"
+                               popover="{{collection.description}}">{{collection.name}}</a></td>
+                        <td style="width:10px">
+                            <a href="#/collection-edit/{{collection.id}}" popover-trigger="hover"
+                               popover-placement="right"
+                               popover="Edit"><i class="icon-pencil"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <a class="btn" href="#/images">Back To Images</a>
+                    <a href="#/image-edit/{{image.id}}" class="btn btn-primary">Edit</a>
+                    <a class="btn btn-danger" execute-click-once="Image.delete(image.id)">Delete</a>
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+

@@ -1,0 +1,1007 @@
+2012/11/19 00:41:14 [error] [php] stream_socket_enable_crypto() [<a href='streams.crypto'>streams.crypto</a>]: this stream does not support SSL/crypto (D:\vhosts\yii.gr\test\protected\extensions\mailer\phpmailer\class.smtp.php:197)
+Stack trace:
+#0 D:\vhosts\yii.gr\test\protected\extensions\mailer\phpmailer\class.phpmailer.php(608): PHPMailer->SmtpConnect()
+#1 D:\vhosts\yii.gr\test\protected\extensions\mailer\phpmailer\class.phpmailer.php(511): PHPMailer->SmtpSend()
+#2 unknown(0): PHPMailer->Send()
+#3 D:\vhosts\yii.gr\test\protected\extensions\mailer\EMailer.php(153): call_user_func_array()
+#4 D:\vhosts\yii.gr\test\protected\helpers\utils.php(31): EMailer->__call()
+#5 D:\vhosts\yii.gr\test\protected\helpers\utils.php(31): EMailer->Send()
+#6 D:\vhosts\yii.gr\test\protected\controllers\SiteController.php(113): sendHtmlEmail()
+#7 D:\vhosts\frameworks\yii_1.1.12\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#8 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\vhosts\yii.gr\test\index.php(36): CWebApplication->run()
+REQUEST_URI=/test/site/contact
+in D:\vhosts\yii.gr\test\protected\extensions\mailer\phpmailer\class.smtp.php (197)
+in D:\vhosts\yii.gr\test\protected\extensions\mailer\phpmailer\class.phpmailer.php (683)
+in D:\vhosts\yii.gr\test\protected\extensions\mailer\phpmailer\class.phpmailer.php (608)
+2013/05/25 10:24:36 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\vhosts\yii.gr\yii_backend\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CAssetManager.php:138
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CAssetManager.php(123): CAssetManager->setBasePath('D:\vhosts\yii.g...')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\CAssetManager.php(217): CAssetManager->getBasePath()
+#2 D:\vhosts\frameworks\yii_1.1.13\framework\web\CClientScript.php(462): CAssetManager->publish('D:\vhosts\frame...')
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\CClientScript.php(499): CClientScript->getCoreScriptUrl()
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\CClientScript.php(315): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CClientScript.php(208): CClientScript->renderCoreScripts()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(351): CClientScript->render('<!DOCTYPE html>...')
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(788): CController->processOutput('<!DOCTYPE html>...')
+#8 D:\vhosts\yii.gr\yii_backend\protected\controllers\SiteController.php(41): CController->render('index')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('')
+#14 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii_backend/
+---
+2013/05/25 10:25:41 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: No such host is known.  (D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php:423)
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php(308): CDbConnection->setActive()
+#2 D:\vhosts\frameworks\yii_1.1.13\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(438): CWebApplication->getComponent()
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(623): CWebApplication->getDb()
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(2309): User->getDbConnection()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct()
+#7 D:\vhosts\yii.gr\yii_backend\protected\models\User.php(71): model()
+#8 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(123): model()
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CComponent.php(111): LoginForm->getUser()
+#10 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(133): LoginForm->__get()
+#11 D:\vhosts\yii.gr\yii_backend\protected\views\site\login.php(42): LoginForm->getRequireCaptcha()
+#12 D:\vhosts\frameworks\yii_1.1.13\framework\web\CBaseController.php(126): require()
+#13 D:\vhosts\frameworks\yii_1.1.13\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(869): SiteController->renderFile()
+#15 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(782): SiteController->renderPartial()
+#16 D:\vhosts\yii.gr\yii_backend\protected\controllers\SiteController.php(260): SiteController->render()
+#17 D:\vhosts\frameworks\yii_1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#18 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#20 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#21 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#22 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/site/login
+in D:\vhosts\yii.gr\yii_backend\protected\models\User.php (71)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (123)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (133)
+2013/05/25 10:26:02 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: No such host is known.  (D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php:423)
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php(308): CDbConnection->setActive()
+#2 D:\vhosts\frameworks\yii_1.1.13\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(438): CWebApplication->getComponent()
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(623): CWebApplication->getDb()
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(2309): User->getDbConnection()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct()
+#7 D:\vhosts\yii.gr\yii_backend\protected\models\User.php(71): model()
+#8 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(123): model()
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CComponent.php(111): LoginForm->getUser()
+#10 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(133): LoginForm->__get()
+#11 D:\vhosts\yii.gr\yii_backend\protected\views\site\login.php(42): LoginForm->getRequireCaptcha()
+#12 D:\vhosts\frameworks\yii_1.1.13\framework\web\CBaseController.php(126): require()
+#13 D:\vhosts\frameworks\yii_1.1.13\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(869): SiteController->renderFile()
+#15 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(782): SiteController->renderPartial()
+#16 D:\vhosts\yii.gr\yii_backend\protected\controllers\SiteController.php(260): SiteController->render()
+#17 D:\vhosts\frameworks\yii_1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#18 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#20 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#21 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#22 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/site/login
+in D:\vhosts\yii.gr\yii_backend\protected\models\User.php (71)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (123)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (133)
+2013/05/25 10:26:24 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: No such host is known.  (D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php:423)
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php(308): CDbConnection->setActive()
+#2 D:\vhosts\frameworks\yii_1.1.13\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(438): CWebApplication->getComponent()
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(623): CWebApplication->getDb()
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(2309): User->getDbConnection()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct()
+#7 D:\vhosts\yii.gr\yii_backend\protected\models\User.php(71): model()
+#8 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(123): model()
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CComponent.php(111): LoginForm->getUser()
+#10 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(133): LoginForm->__get()
+#11 D:\vhosts\yii.gr\yii_backend\protected\views\site\login.php(42): LoginForm->getRequireCaptcha()
+#12 D:\vhosts\frameworks\yii_1.1.13\framework\web\CBaseController.php(126): require()
+#13 D:\vhosts\frameworks\yii_1.1.13\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(869): SiteController->renderFile()
+#15 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(782): SiteController->renderPartial()
+#16 D:\vhosts\yii.gr\yii_backend\protected\controllers\SiteController.php(260): SiteController->render()
+#17 D:\vhosts\frameworks\yii_1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#18 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#20 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#21 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#22 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/site/login
+in D:\vhosts\yii.gr\yii_backend\protected\models\User.php (71)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (123)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (133)
+2013/05/25 10:26:45 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: No such host is known.  (D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 D:\vhosts\frameworks\yii_1.1.12\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(624): CWebApplication->getDb()
+#5 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(2311): User->getDbConnection()
+#6 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct()
+#7 D:\vhosts\yii.gr\yii_backend\protected\models\User.php(71): model()
+#8 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(123): model()
+#9 D:\vhosts\frameworks\yii_1.1.12\framework\base\CComponent.php(112): LoginForm->getUser()
+#10 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(133): LoginForm->__get()
+#11 D:\vhosts\yii.gr\yii_backend\protected\views\site\login.php(42): LoginForm->getRequireCaptcha()
+#12 D:\vhosts\frameworks\yii_1.1.12\framework\web\CBaseController.php(127): require()
+#13 D:\vhosts\frameworks\yii_1.1.12\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#14 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(870): SiteController->renderFile()
+#15 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(783): SiteController->renderPartial()
+#16 D:\vhosts\yii.gr\yii_backend\protected\controllers\SiteController.php(260): SiteController->render()
+#17 D:\vhosts\frameworks\yii_1.1.12\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#18 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams()
+#19 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(287): SiteController->runAction()
+#20 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#21 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(283): SiteController->run()
+#22 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#23 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/site/login
+in D:\vhosts\yii.gr\yii_backend\protected\models\User.php (71)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (123)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (133)
+2013/05/25 10:26:49 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: No such host is known.  (D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 D:\vhosts\frameworks\yii_1.1.12\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(624): CWebApplication->getDb()
+#5 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(2311): User->getDbConnection()
+#6 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct()
+#7 D:\vhosts\yii.gr\yii_backend\protected\models\User.php(71): model()
+#8 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(123): model()
+#9 D:\vhosts\frameworks\yii_1.1.12\framework\base\CComponent.php(112): LoginForm->getUser()
+#10 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(133): LoginForm->__get()
+#11 D:\vhosts\yii.gr\yii_backend\protected\views\site\login.php(42): LoginForm->getRequireCaptcha()
+#12 D:\vhosts\frameworks\yii_1.1.12\framework\web\CBaseController.php(127): require()
+#13 D:\vhosts\frameworks\yii_1.1.12\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#14 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(870): SiteController->renderFile()
+#15 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(783): SiteController->renderPartial()
+#16 D:\vhosts\yii.gr\yii_backend\protected\controllers\SiteController.php(260): SiteController->render()
+#17 D:\vhosts\frameworks\yii_1.1.12\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#18 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams()
+#19 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(287): SiteController->runAction()
+#20 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#21 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(283): SiteController->run()
+#22 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#23 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/site/login
+in D:\vhosts\yii.gr\yii_backend\protected\models\User.php (71)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (123)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (133)
+2013/05/25 10:26:55 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: No such host is known.  (D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 D:\vhosts\frameworks\yii_1.1.12\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(624): CWebApplication->getDb()
+#5 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(2311): User->getDbConnection()
+#6 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct()
+#7 D:\vhosts\yii.gr\yii_backend\protected\models\User.php(71): model()
+#8 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(123): model()
+#9 D:\vhosts\frameworks\yii_1.1.12\framework\base\CComponent.php(112): LoginForm->getUser()
+#10 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(133): LoginForm->__get()
+#11 D:\vhosts\yii.gr\yii_backend\protected\views\site\login.php(42): LoginForm->getRequireCaptcha()
+#12 D:\vhosts\frameworks\yii_1.1.12\framework\web\CBaseController.php(127): require()
+#13 D:\vhosts\frameworks\yii_1.1.12\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#14 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(870): SiteController->renderFile()
+#15 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(783): SiteController->renderPartial()
+#16 D:\vhosts\yii.gr\yii_backend\protected\controllers\SiteController.php(260): SiteController->render()
+#17 D:\vhosts\frameworks\yii_1.1.12\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#18 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams()
+#19 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(287): SiteController->runAction()
+#20 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#21 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(283): SiteController->run()
+#22 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#23 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/site/login
+in D:\vhosts\yii.gr\yii_backend\protected\models\User.php (71)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (123)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (133)
+2013/05/25 10:28:22 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: No such host is known.  (D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php:423)
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php(308): CDbConnection->setActive()
+#2 D:\vhosts\frameworks\yii_1.1.13\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(438): CWebApplication->getComponent()
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(623): CWebApplication->getDb()
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(2309): User->getDbConnection()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct()
+#7 D:\vhosts\yii.gr\yii_backend\protected\models\User.php(71): model()
+#8 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(123): model()
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CComponent.php(111): LoginForm->getUser()
+#10 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(133): LoginForm->__get()
+#11 D:\vhosts\yii.gr\yii_backend\protected\views\site\login.php(42): LoginForm->getRequireCaptcha()
+#12 D:\vhosts\frameworks\yii_1.1.13\framework\web\CBaseController.php(126): require()
+#13 D:\vhosts\frameworks\yii_1.1.13\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(869): SiteController->renderFile()
+#15 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(782): SiteController->renderPartial()
+#16 D:\vhosts\yii.gr\yii_backend\protected\controllers\SiteController.php(260): SiteController->render()
+#17 D:\vhosts\frameworks\yii_1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#18 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#20 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#21 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#22 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/site/login
+in D:\vhosts\yii.gr\yii_backend\protected\models\User.php (71)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (123)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (133)
+2013/05/25 10:28:50 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: No such host is known.  (D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php:423)
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\db\CDbConnection.php(308): CDbConnection->setActive()
+#2 D:\vhosts\frameworks\yii_1.1.13\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(438): CWebApplication->getComponent()
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(623): CWebApplication->getDb()
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(2309): User->getDbConnection()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct()
+#7 D:\vhosts\yii.gr\yii_backend\protected\models\User.php(71): model()
+#8 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(123): model()
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CComponent.php(111): LoginForm->getUser()
+#10 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(133): LoginForm->__get()
+#11 D:\vhosts\yii.gr\yii_backend\protected\views\site\login.php(42): LoginForm->getRequireCaptcha()
+#12 D:\vhosts\frameworks\yii_1.1.13\framework\web\CBaseController.php(126): require()
+#13 D:\vhosts\frameworks\yii_1.1.13\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(869): SiteController->renderFile()
+#15 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(782): SiteController->renderPartial()
+#16 D:\vhosts\yii.gr\yii_backend\protected\controllers\SiteController.php(260): SiteController->render()
+#17 D:\vhosts\frameworks\yii_1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#18 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#20 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#21 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#22 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/site/login
+in D:\vhosts\yii.gr\yii_backend\protected\models\User.php (71)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (123)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (133)
+2013/05/25 10:29:56 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: No such host is known.  (D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 D:\vhosts\frameworks\yii_1.1.12\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(624): CWebApplication->getDb()
+#5 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(2311): User->getDbConnection()
+#6 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct()
+#7 D:\vhosts\yii.gr\yii_backend\protected\models\User.php(71): model()
+#8 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(123): model()
+#9 D:\vhosts\frameworks\yii_1.1.12\framework\base\CComponent.php(112): LoginForm->getUser()
+#10 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(133): LoginForm->__get()
+#11 D:\vhosts\yii.gr\yii_backend\protected\views\site\login.php(42): LoginForm->getRequireCaptcha()
+#12 D:\vhosts\frameworks\yii_1.1.12\framework\web\CBaseController.php(127): require()
+#13 D:\vhosts\frameworks\yii_1.1.12\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#14 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(870): SiteController->renderFile()
+#15 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(783): SiteController->renderPartial()
+#16 D:\vhosts\yii.gr\yii_backend\protected\controllers\SiteController.php(260): SiteController->render()
+#17 D:\vhosts\frameworks\yii_1.1.12\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#18 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams()
+#19 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(287): SiteController->runAction()
+#20 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#21 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(283): SiteController->run()
+#22 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#23 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/site/login
+in D:\vhosts\yii.gr\yii_backend\protected\models\User.php (71)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (123)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (133)
+2013/05/25 10:30:04 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: No such host is known.  (D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 D:\vhosts\frameworks\yii_1.1.12\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(624): CWebApplication->getDb()
+#5 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(2311): User->getDbConnection()
+#6 D:\vhosts\frameworks\yii_1.1.12\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct()
+#7 D:\vhosts\yii.gr\yii_backend\protected\models\User.php(71): model()
+#8 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(123): model()
+#9 D:\vhosts\frameworks\yii_1.1.12\framework\base\CComponent.php(112): LoginForm->getUser()
+#10 D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php(133): LoginForm->__get()
+#11 D:\vhosts\yii.gr\yii_backend\protected\views\site\login.php(42): LoginForm->getRequireCaptcha()
+#12 D:\vhosts\frameworks\yii_1.1.12\framework\web\CBaseController.php(127): require()
+#13 D:\vhosts\frameworks\yii_1.1.12\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#14 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(870): SiteController->renderFile()
+#15 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(783): SiteController->renderPartial()
+#16 D:\vhosts\yii.gr\yii_backend\protected\controllers\SiteController.php(260): SiteController->render()
+#17 D:\vhosts\frameworks\yii_1.1.12\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#18 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams()
+#19 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(287): SiteController->runAction()
+#20 D:\vhosts\frameworks\yii_1.1.12\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#21 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(283): SiteController->run()
+#22 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#23 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/site/login
+in D:\vhosts\yii.gr\yii_backend\protected\models\User.php (71)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (123)
+in D:\vhosts\yii.gr\yii_backend\protected\models\LoginForm.php (133)
+2013/05/26 08:19:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/yii_backend/api/imageRest".' in D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('ng-yii/yii_back...')
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/yii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 08:19:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/yii_backend/api/collectionRest".' in D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('ng-yii/yii_back...')
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/yii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 08:19:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/yii_backend/api/collectionRest".' in D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('ng-yii/yii_back...')
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/yii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 08:19:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/yii_backend/api/imageRest".' in D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('ng-yii/yii_back...')
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/yii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 08:20:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/yii_backend/api/collectionRest".' in D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('ng-yii/yii_back...')
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/yii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 08:20:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/yii_backend/api/imageRest".' in D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('ng-yii/yii_back...')
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/yii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 08:22:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yii_backend/api/imageRest".' in D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('yii_backend/api...')
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/yii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 08:22:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yii_backend/api/collectionRest".' in D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('yii_backend/api...')
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/yii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 08:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dfyii_backend/api/collectionRest".' in D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('dfyii_backend/a...')
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/dfyii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 08:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dfyii_backend/api/imageRest".' in D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('dfyii_backend/a...')
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/dfyii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 08:25:32 [error] [php] include(ERestController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\vhosts\frameworks\yii_1.1.12\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php(13): spl_autoload_call()
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(355): require()
+#2 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(277): CWebApplication->createController()
+#3 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/api/imageRest
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php (13)
+in D:\vhosts\yii.gr\yii_backend\index.php (36)
+2013/05/26 08:25:32 [error] [php] include(ERestController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\vhosts\frameworks\yii_1.1.12\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php(13): spl_autoload_call()
+#1 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(355): require()
+#2 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(277): CWebApplication->createController()
+#3 D:\vhosts\frameworks\yii_1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\vhosts\frameworks\yii_1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/api/collectionRest
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (13)
+in D:\vhosts\yii.gr\yii_backend\index.php (36)
+2013/05/26 08:26:59 [error] [php] include(ERestController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\vhosts\frameworks\yii_1.1.13\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php(13): spl_autoload_call()
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(354): require()
+#2 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/api/imageRest
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php (13)
+in D:\vhosts\yii.gr\yii_backend\index.php (36)
+2013/05/26 08:26:59 [error] [php] include(ERestController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\vhosts\frameworks\yii_1.1.13\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php(13): spl_autoload_call()
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(354): require()
+#2 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/api/collectionRest
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (13)
+in D:\vhosts\yii.gr\yii_backend\index.php (36)
+2013/05/26 08:27:06 [error] [php] include(ERestController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\vhosts\frameworks\yii_1.1.13\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php(13): spl_autoload_call()
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(354): require()
+#2 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/api/collectionRest
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (13)
+in D:\vhosts\yii.gr\yii_backend\index.php (36)
+2013/05/26 08:27:07 [error] [php] include(ERestController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\vhosts\frameworks\yii_1.1.13\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php(13): spl_autoload_call()
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(354): require()
+#2 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/api/imageRest
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php (13)
+in D:\vhosts\yii.gr\yii_backend\index.php (36)
+2013/05/26 08:31:02 [error] [php] include(ERestController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\vhosts\frameworks\yii_1.1.13\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php(13): spl_autoload_call()
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(354): require()
+#2 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/api/imageRest
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php (13)
+in D:\vhosts\yii.gr\yii_backend\index.php (36)
+2013/05/26 08:31:02 [error] [php] include(ERestController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\vhosts\frameworks\yii_1.1.13\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php(13): spl_autoload_call()
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(354): require()
+#2 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\vhosts\yii.gr\yii_backend\index.php(36): CWebApplication->run()
+REQUEST_URI=/yii_backend/api/collectionRest
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (13)
+in D:\vhosts\yii.gr\yii_backend\index.php (36)
+2013/05/26 09:29:11 [warning] [application] Failed to set unsafe attribute "images" of "Collection".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (176)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (307)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:29:51 [warning] [application] Failed to set unsafe attribute "collections" of "Image".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php (185)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (307)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:31:08 [warning] [application] Failed to set unsafe attribute "collections" of "Image".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php (185)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (307)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:36:06 [warning] [application] Failed to set unsafe attribute "collections" of "Image".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php (185)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (307)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:36:48 [warning] [application] Failed to set unsafe attribute "collections" of "Image".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php (185)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (307)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:37:05 [warning] [application] Failed to set unsafe attribute "collections" of "Image".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php (185)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (307)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:38:09 [warning] [application] Failed to set unsafe attribute "collections" of "Image".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php (185)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (307)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:38:24 [warning] [application] Failed to set unsafe attribute "images" of "Collection".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (176)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (307)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:38:34 [warning] [application] Failed to set unsafe attribute "images" of "Collection".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (176)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (307)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:38:57 [warning] [application] Failed to set unsafe attribute "id" of "Collection".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (108)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (282)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:38:57 [warning] [application] Failed to set unsafe attribute "images" of "Collection".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (108)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (282)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:39:05 [warning] [application] Failed to set unsafe attribute "id" of "Collection".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (108)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (282)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:39:05 [warning] [application] Failed to set unsafe attribute "images" of "Collection".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (108)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (282)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:39:15 [warning] [application] Failed to set unsafe attribute "id" of "Collection".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (108)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (282)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:39:15 [warning] [application] Failed to set unsafe attribute "images" of "Collection".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (108)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (282)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:39:26 [warning] [application] Failed to set unsafe attribute "id" of "Collection".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (108)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (282)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:39:26 [warning] [application] Failed to set unsafe attribute "images" of "Collection".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (108)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (282)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:39:49 [warning] [application] Failed to set unsafe attribute "collections" of "Image".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\ImageRestController.php (185)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (307)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:40:06 [warning] [application] Failed to set unsafe attribute "id" of "Collection".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (108)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (282)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 09:40:06 [warning] [application] Failed to set unsafe attribute "images" of "Collection".
+in D:\vhosts\yii.gr\yii_backend\protected\controllers\CollectionRestController.php (108)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (282)
+in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php (143)
+2013/05/26 10:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/collectionRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('api/collectionR...')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/api/collectionRest
+HTTP_REFERER=http://localhost:3005/
+---
+2013/05/26 10:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/imageRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('api/imageRest')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/api/imageRest
+HTTP_REFERER=http://localhost:3005/
+---
+2013/05/26 10:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/collectionRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('api/collectionR...')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/api/collectionRest
+HTTP_REFERER=http://localhost:3005/
+---
+2013/05/26 10:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/imageRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('api/imageRest')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/api/imageRest
+HTTP_REFERER=http://localhost:3005/
+---
+2013/05/26 10:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/collectionRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('api/collectionR...')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/api/collectionRest
+HTTP_REFERER=http://localhost:3005/
+---
+2013/05/26 10:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/imageRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('api/imageRest')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/api/imageRest
+HTTP_REFERER=http://localhost:3005/
+---
+2013/05/26 10:41:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/imageRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('api/imageRest')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/api/imageRest
+HTTP_REFERER=http://localhost:3005/
+---
+2013/05/26 10:41:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/collectionRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('api/collectionR...')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/api/collectionRest
+HTTP_REFERER=http://localhost:3005/
+---
+2013/05/26 10:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/yii_backend/api/collectionRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('ng-yii/yii_back...')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/yii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 10:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/yii_backend/api/imageRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('ng-yii/yii_back...')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/yii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:00:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/yii_backend/api/imageRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('ng-yii/yii_back...')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/yii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:00:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/yii_backend/api/collectionRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('ng-yii/yii_back...')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/yii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:00:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/yii_bacrtrkend/api/imageRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('ng-yii/yii_bacr...')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/yii_bacrtrkend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:00:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/yii_bacrtrkend/api/collectionRest".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('ng-yii/yii_bacr...')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/yii_bacrtrkend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:08:31 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Name is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:135
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('imageRest/restL...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:08:31 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Name is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:135
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('collectionRest/...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:08:47 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Name is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:135
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('collectionRest/...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:08:47 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Name is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:135
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('imageRest/restL...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:08:49 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Name is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:135
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('imageRest/restL...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:08:49 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Name is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:135
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('collectionRest/...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:08:50 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Password is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:140
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('imageRest/restL...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:08:50 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Password is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:140
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('collectionRest/...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:09:04 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Password is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:140
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('imageRest/restL...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:09:05 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Password is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:140
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('collectionRest/...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:09:05 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Password is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:140
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('collectionRest/...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:09:05 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Password is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:140
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('imageRest/restL...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:09:08 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Password is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:140
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('collectionRest/...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/collectionRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:09:08 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Error: User Password is invalid' in D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php:140
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterRestAccessRules(Object(CFilterChain))
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\vhosts\yii.gr\yii_backend\protected\extensions\restfullyii\components\ERestController.php(92): CFilterChain->run()
+#3 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CInlineFilter.php(58): ERestController->filterHttpsOnly(Object(CFilterChain))
+#4 D:\vhosts\frameworks\yii_1.1.13\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\vhosts\frameworks\yii_1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(282): CController->run('restList')
+#8 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('imageRest/restL...')
+#9 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_backend/api/imageRest
+HTTP_REFERER=http://yii.gr/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:16:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/dev".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('ng-yii/dev')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:16:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/dev".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('ng-yii/dev')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:16:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/dev".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('ng-yii/dev')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/dev/
+---
+2013/05/26 11:16:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ng-yii/dev".' in D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\vhosts\frameworks\yii_1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('ng-yii/dev')
+#1 D:\vhosts\frameworks\yii_1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\vhosts\yii.gr\yii_backend\index.php(36): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_backend/ng-yii/dev/
+---

@@ -1,0 +1,132 @@
+﻿//RESTFULLYII  RESPONSES
+
+//GET LIST
+{
+{"success": true,
+    "message": "Records Retrieved Successfully",
+    "data": {
+        "totalCount": "8",
+        "product": [
+        ]
+    }
+},
+
+
+
+////GET ONE
+
+{"success": true,
+"message": "Record Retrieved Successfully",
+"data": {
+"totalCount": 1,
+"product": {
+
+}
+}},
+
+
+
+
+
+
+//PUT SUCCESS
+{"success": true,
+"message": "Record Updated",
+"data": {
+"totalCount": 1,
+"product": [
+{
+"id": "2",
+"name": "Proooooo",
+"description": "dxxxxxxxxxxxxxxxxxxx",
+"price": "3.99",
+"img_name": "waterbear",
+"img_size": "41673",
+"img_ext": "jpg",
+"stock": null,
+"categories": [
+
+]
+}
+]
+}},
+
+//PUT FAIL
+{"success": false,
+"message": {
+"error": "Model could not be saved as validation failed.",
+"validation": {
+"price": ["Must be decimal with integer part  length of 3 at most and  decimal  precision of 2.", "Price is too long (maximum is 8 characters)."]
+}
+},
+"data": {
+"errorCode": 406
+}
+},
+
+
+
+POST SUCCESS
+//POSTED RECORD
+{
+
+"name": "King diamond",
+"description": "Metal God",
+"price": "3.99",
+"img_name": "diamond",
+"img_size": "33333",
+"img_ext": "jpg",
+"stock": null,
+
+}
+,
+
+{"success": true,
+"message": "Record(s) Created",
+"data": {
+"totalCount": 1,
+"product": [
+{
+"price": "3.99",
+"name": "King diamond",
+"description": "Metal God",
+"img_name": "diamond",
+"img_size": "33333",
+"img_ext": "jpg",
+"stock": null,
+"id": "10"
+}
+]
+}}
+,
+//POST FAILED
+
+{"success": false,
+"message": {
+"error": "Model could not be saved as validation failed.",
+"validation": {
+"price": ["Must be decimal with integer part  length of 3 at most and  decimal  precision of 2.", "Price is too long (maximum is 8 characters)."]
+}
+}, "data": {
+"errorCode": 406
+}}
+,
+//DELETE SUCCESS
+{"success": true,
+"message": "Record Deleted",
+"data": {
+"id": "10"
+}
+}
+,
+//DELETE FALSE
+{"success": false,
+"message": "Record Not Found",
+"data": {
+"errorCode": 404
+}}
+
+
+
+
+}

@@ -1,0 +1,59 @@
+/*!
+ * responsive-custom.less
+ *
+ *  Spiros Kabasakalis
+
+ @column-width:42;
+ @gutter-width: 20;
+ @columns: 12;
+
+ @total-width=@columns*(@column-width+@gutter-width);
+ 
+ */
+/*UP TO LANDSCAPE PHONE   */
+@media (max-width: 319px) {
+  header#mainheader {
+    background: url('http://placehold.it/300x80.png/555555/777777&text=myYii Backend') center center no-repeat;
+    height: 80px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  header#mainheader {
+    background: url('http://placehold.it/480x80.png/555555/777777&text=myYii Backend') center center no-repeat;
+    height: 80px;
+  }
+}
+/* LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET */
+@media (min-width: 481px) and (max-width: 767px) {
+  header#mainheader {
+    background: url('http://placehold.it/780x80.png/555555/777777&text=myYii Backend') center center no-repeat;
+    height: 80px;
+  }
+}
+/* PORTRAIT TABLET TO DEFAULT DESKTOP*/
+@media (min-width: 768px) and (max-width: 979px) {
+  header#mainheader {
+    background-image: url('http://placehold.it/760x120.png/555555/777777&text=myYii Backend');
+    height: 120px;
+  }
+}
+/*TABLETS AND BELOW*/
+@media (max-width: 979px) {
+  .navbar .brand {
+    float: left!important ;
+  }
+}
+/* DEFAULT DESKTOP   */
+@media (min-width: 980px) {
+  header#mainheader {
+    background-image: url('http://placehold.it/940x120.png/555555/777777&text=myYii Backend');
+    height: 120px;
+  }
+}
+/*LARGE DESKTOP & UP*/
+@media (min-width: 1200px) {
+  header#mainheader {
+    background-image: url('http://placehold.it/1200x120.png/555555/777777&text=myYii Backend');
+    height: 120px;
+  }
+}

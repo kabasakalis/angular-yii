@@ -1,0 +1,130 @@
+<div ng-hide="true" ui-jq="fadeIn">
+    <div class="row">
+        <div class="span6">
+            <h1 ui-if="editing">Update Image (ID: {{image.id}})</h1>
+
+            <h1 ui-if="!editing">Create New Image</h1>
+
+            <form name="cform"
+                  id="cform"
+                  class="row form-horizontal newproduct-create-form"
+                  novalidate
+                    >
+                <div class="control-group"
+                     ng-class="{error: cform.name.$dirty&&  ( cform.name.$error.required || cform.name.$error.maxlength) }">
+                    <label class="control-label" for="name">Name</label>
+
+                    <div class="controls">
+                        <input type="text" name="name" id="name" ng-maxlength="20" ng-model="image.name" required
+                               value="{{image.name}}" placeholder="Name">
+
+            <span ng-show=" cform.name.$error.maxlength"
+                  class="help-inline">Must be less than 20 characters.</span>
+                        <span ng-show="cform.name.$dirty&&cform.name.$error.required"
+                              class="help-inline">Required.</span>
+                    </div>
+
+                </div>
+                <div class="control-group"
+                     ng-class="{error: cform.description.$dirty&& ( cform.description.$error.maxlength || cform.description.$error.minlength ||  cform.description.$error.required) }">
+                    <label class="control-label" for="description">description</label>
+
+                    <div class="controls">
+                        <textarea name="description" ng-model="image.description" id="description" rows="3"
+                                  ng-minlength="10"
+                                  ng-maxlength="100" required placeholder="Description"></textarea>
+                        <span ng-show=" cform.description.$dirty&&cform.description.$error.maxlength"
+                              class="help-inline">Must be less than 100  characters.</span>
+                        <span ng-show=" cform.description.$dirty&&cform.description.$error.minlength"
+                              class="help-inline">Must be at least  10  characters.</span>
+            <span ng-show="cform.description.$dirty&&cform.description.$error.required"
+                  class="help-inline">Required.</span>
+                    </div>
+                </div>
+
+                <div class="control-group"
+                     ng-class="{error: cform.price.$dirty&&  ( cform.price.$error.pattern || cform.price.$error.required ) }">
+                    <label class="control-label" for="price">Price</label>
+
+                    <div class="controls">
+                        <input type="text" id="price" name="price" placeholder="Price"
+                               ng-pattern="/^[0-9]{1,3}(\.[0-9]{0,2})?$/" required ng-model="image.price">
+                        <span ng-show="cform.price.$dirty && cform.price.$error.pattern" class="help-inline">Must be  a float with 3 digits max integer part and  2 digits max  presicion.</span>
+                        <span ng-show="cform.price.$dirty && cform.price.$error.required"
+                              class="help-inline">Required.</span>
+                    </div>
+                </div>
+
+
+                <div class="control-group"
+                     ng-class="{error: cform.collections.$dirty &&  cform.collections.$error.required  }">
+                    <label class="control-label" for="collections">Collections</label>
+
+                    <div class="controls">
+                        <input id="collections" name="collections"
+                               data-placeholder="Choose collections..."
+                               ng-model="image.selectedOptions"
+                               ui-select2="filters.collectionOptions"
+                                >
+
+                        <span ng-show="cform.collections.$dirty  && cform.collections.$error.required"
+                              class="help-inline">Required.</span>
+                    </div>
+
+                </div>
+
+                <div class="control-group" ng-class="{error: filesize > maxFilesize}">
+                    <div class="controls">
+                        <div class="fileupload fileupload-new" data-provides="fileupload">
+                            <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+
+                                <img ng-src="{{Image.getImageURL(image)}}"/>
+                            </div>
+
+
+                            <div class="fileupload-preview fileupload-exists thumbnail"
+                                 style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+                            <div>
+                    <span class="btn btn-file"><span class="fileupload-new">Select image</span><span
+                            class="fileupload-exists">Change</span><input id="image"
+                                                                          onchange="if(document.getElementById('image').files[0])angular.element(document.getElementById('image')).scope().onImageselected(document.getElementById('image').files[0].name,document.getElementById('image').files[0].size)"
+                                                                          name="image" type="file"/></span>
+                                <a href="#" class="btn fileupload-exists"
+                                   ng-click="filesize=0;fileSelected='';isFileSelected=false "
+                                   data-dismiss="fileupload">Remove</a>
+                            </div>
+                        </div>
+            <span class="label label-info" ng-show="isFileSelected===true"> File Name:   <strong>
+                {{fileSelected}}</strong></span>
+            <span class="label label-info" ng-show="isFileSelected===true">File Size:      <strong>{{readableFilesize(filesize,1)
+                }}</strong></span>
+
+                        <div>
+                            <span ng-show=" filesize > 100*1024" class="help-inline"><i
+                                    class="icon-exclamation-sign"></i>    File size must be less than {{readableFilesize(maxFilesize,1)}}</span>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="id" value={{image.id}}>
+
+                <div class="control-group">
+                    <div class="controls"><!--{{ cform.$valid}}-->
+                        <button class="btn" ng-disabled="cform.$invalid ||  filesize >100*1024"
+                                type="submit"
+                                execute-click-once="Image.createOrUpdate()"
+                                id="create-update"
+                                >
+                            <span ui-if="editing">Update</span>
+                            <span ui-if="!editing">Create</span>
+                        </button>
+                        <a href="#/image/{{image.id}}" class="btn btn-primary">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="span6">
+            <h3>JSON Image Object (ID: {{image.id}})</h3>
+            <pre>{{ image | json }}</pre>
+        </div>
+    </div>
+</div>

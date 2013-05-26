@@ -1,0 +1,5 @@
+﻿# Git Ignore for Angular Yii -Gallery Manager  Spiros Kabasakalis.@2013
+.idea
+backup.bat
+push_to_github.bat
+start_repo_bat

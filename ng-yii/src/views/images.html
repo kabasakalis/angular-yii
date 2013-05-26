@@ -1,0 +1,21 @@
+<div class="row" ng-hide="true" ui-jq="fadeIn">
+    <h1 class="page-header">Images</h1>
+    <a class="btn btn-primary" href="#/image-create"> Add Image <i class="icon-plus-sign"></i> </a>
+    <input id="collections" name="collections" ui-select2="filters.collectionOptions"
+           ng-model="selectedCollectionModel">
+    <span class="badge badge-info"> {{renderedImages.length}}</span> <span class="label label-info">   images </span>
+    <ul class="thumbnails" ng-hide="!images.length">
+        <li class="row" ng-repeat="image in renderedImages" ng-animate="'thumb'">
+            <div class="thumbnail" id="{{image.id}}">
+                <div class="detail caption">
+                    <a href="#/image/{{image.id}}">
+                        <img ng-src="{{Image.getThumbImageURL(image)}}" alt="">
+                    </a>
+                    <!--<strong>{{image.name}}</strong>-->
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+

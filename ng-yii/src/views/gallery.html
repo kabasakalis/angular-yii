@@ -1,0 +1,24 @@
+<div class="row">
+    <h1 class="page-header">Gallery</h1>
+    <div >
+     <input      id="collections" name="collections" ui-select2="filters.collectionOptions"
+                      ng-model="selectedCollectionModel">
+              <!-- <pre>{{ renderedImages | json }}</pre> For debugging -->
+            <span class="badge badge-info"> {{ renderedImages.length}}</span>    <span class="label label-info">   images </span>
+     </div>
+    <!--For fancybox directive to work,the id of the including div must match the a anchor class -->
+    <div  id='gallery'  class=""  fancybox   >
+        <h3 >{{selectedCollectionModel.text}}</h3>
+                  <a class="gallery"
+                                           rel="{{selectedCollectionModel.text}}"
+                                           ng-repeat="image in renderedImages"  title="{{image.name}}"
+                                           href="{{Image.getImageURL(image)}}"
+                                           ng-animate="{enter: 'sides-enter',leave: 'flipup-leave'}"
+                                          >
+                                   			<img ng-src="{{Image.getThumbImageURL(image)}}"  alt="{{image.name}}">
+                                   		</a>
+       </div>
+</div>
+
+
+
