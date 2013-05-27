@@ -33,6 +33,7 @@ This will make your `config.php` functional both in local development and produc
 * In`config/main.php` configure your **database info**.Point to the database you created earlier.
 * In`config/main.php`,in params array fill in the **RESTusername** and **RESTpassword** fields.They are used for basic REST authentication.
 **Note**:These credentials are sent from the client with custom headers,so your server must allow this.
+* Create an `uploads\images\thumbnails' folder structure in project webroot.You can change the names in `ng-yii\src\scripts\config\constants.js`,and `protected\models\Image.php.`
 
 ### Frontend
 You will need Command line tools so it would be ideal if you could use these in your IDE.
