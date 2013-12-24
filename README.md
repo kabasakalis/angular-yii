@@ -98,6 +98,9 @@ Spiros 'drumaddict' Kabasakalis
 ## Acknowledgement
 [AngularFun](https://github.com/CaryLandholt/AngularFun) by [Cary Landholt](https://github.com/CaryLandholt).
 
+## License
+angular-yii  is released under the [WTFPL](http://sam.zoy.org/wtfpl/) license.This means that you can literally do whatever you want with this software.
+
 ## Resources
 * [AngularJS](http://angularjs.org/)
 * [John Lindquist's Egghead.io](http://www.youtube.com/playlist?list=PLP6DbQBkn9ymGQh2qpk9ImLHdSH5T7yw7)
