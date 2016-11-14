@@ -81,7 +81,7 @@ The compiled app in `dev` folder will run.If you use a non-localhost virtual hos
 you must take care of the cross domain security issue already mentioned above.
 
 ## Tests.
-The [Jasmine](http://pivotal.github.io/jasmine/) framework is used for testing.There are 8 simple demo unit tests in two files.( in `ng-yii/test/scripts/services`).
+The [Jasmine](https://jasmine.github.io/) framework is used for testing.There are 8 simple demo unit tests in two files.( in `ng-yii/test/scripts/services`).
 Just point your browser to  `/ng-yii/test/runner.html` to run the tests.
 
 ## [Karma](http://karma-runner.github.io/0.8/index.html) (ex-Testacular):Test Runner.
@@ -114,7 +114,7 @@ angular-yii  is released under the [WTFPL](http://sam.zoy.org/wtfpl/) license.Th
 * [node.js](http://nodejs.org/)
 * [RequireJS](http://requirejs.org/)
 * [Grunt](http://gruntjs.com/)
-* [Jasmine](http://pivotal.github.io/jasmine/)
+* [Jasmine](https://jasmine.github.io/)
 * [Karma](http://karma-runner.github.io/0.8/index.html)
 * [RESTFullYii](http://evan108108.github.io/RESTFullYii/)
 * [ActiveRecord Relation Behavior](https://github.com/yiiext/activerecord-relation-behavior)
